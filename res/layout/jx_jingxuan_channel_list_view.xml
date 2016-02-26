@@ -1,0 +1,224 @@
+<com.bestv.ott.jingxuan.view.JingxuanChannelListView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <!-- <ImageView -->
+    <!-- android:layout_width="match_parent" -->
+    <!-- android:layout_height="match_parent" -->
+    <!-- android:background="@drawable/jx_iotv_tran_channel_list_item_bg" /> -->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal" >
+
+        <!-- 频道和节目单 -->
+
+        <LinearLayout
+            android:id="@+id/linear_channel_program"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/jx_channel_program_list_bg"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/jx_channel_list_padding_left"
+            android:paddingTop="@dimen/jx_padding_top" >
+
+            <!-- 频道列表 -->
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <ViewFlipper
+                    android:id="@+id/channel_index_filpper"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <com.bestv.ott.jingxuan.view.SelfFocusListView
+                        android:id="@+id/channel_index_1"
+                        android:layout_width="@dimen/jingxuan_channel_index_width"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:divider="@drawable/jx_channel_divider"
+                        android:listSelector="@drawable/jx_iotv_list_date_selector"
+                        android:scrollbarAlwaysDrawVerticalTrack="false"
+                        android:scrollbars="none" />
+                </ViewFlipper>
+
+                <RelativeLayout
+                    android:layout_width="@dimen/jingxuan_channel_index_width"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/jx_oper_item_spacing" >
+
+                    <ImageView
+                        android:id="@+id/channel_index_down_arrow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/jx_iotv_arrow_down" />
+
+                    <ImageView
+                        android:id="@+id/channel_index_up_arrow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@+id/channel_index_down_arrow"
+                        android:background="@drawable/jx_iotv_arrow_up" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <!-- 节目单 -->
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/jx_oper_item_spacing" >
+
+                <LinearLayout
+                    android:id="@+id/linear_program"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <ViewFlipper
+                        android:id="@+id/channel_program_filpper"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" >
+
+                        <com.bestv.ott.jingxuan.view.SelfFocusListView
+                            android:id="@+id/channel_program_1"
+                            android:layout_height="wrap_content"
+                            android:divider="@drawable/jx_channel_divider"
+                            android:listSelector="@drawable/jx_iotv_list_date_selector"
+                            android:scrollbarAlwaysDrawVerticalTrack="false"
+                            android:layout_width="@dimen/jingxuan_channel_program_width"
+                            android:scrollbars="none" />
+                    </ViewFlipper>
+
+                    <RelativeLayout
+                        android:layout_width="@dimen/jx_channel_program_width"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/jx_oper_item_spacing" >
+
+                        <ImageView
+                            android:id="@+id/channel_program_down_arrow"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:background="@drawable/jx_iotv_arrow_down" />
+
+                        <ImageView
+                            android:id="@+id/channel_program_up_arrow"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toLeftOf="@+id/channel_program_down_arrow"
+                            android:background="@drawable/jx_iotv_arrow_up" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/txt_no_program"
+                    style="@style/TVBaseWhiteTextView"
+                    android:layout_width="@dimen/jx_channel_program_width"
+                    android:layout_height="@dimen/jx_channel_program_height"
+                    android:background="@drawable/jx_iotv_tv_tran_black_bg"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/jx_oper_item_spacing"
+                    android:text="@string/channel_list_no_program"
+                    android:visibility="invisible" />
+            </RelativeLayout>
+
+            <ImageButton
+                android:id="@+id/btn_safe"
+                android:layout_width="@dimen/jx_oper_item_spacing"
+                android:layout_height="@dimen/jx_tv_oper_safe_height"
+                android:background="@android:color/transparent"
+                android:focusable="false"
+                android:focusableInTouchMode="false" />
+        </LinearLayout>
+
+        <!-- subprogram list -->
+
+        <LinearLayout
+            android:id="@+id/linear_channel_date"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/jx_subprogram_list_bg"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/jx_padding_top"
+            android:visibility="invisible" >
+
+            <LinearLayout
+                android:layout_width="@dimen/jx_channel_date_width"
+                android:layout_height="@dimen/jx_channel_date_height"
+                android:orientation="vertical" >
+
+                <ImageButton
+                    android:id="@+id/ib_subscribe"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/jx_channel_list_date_item_height"
+                    android:background="@drawable/jx_subscribe" 
+                    android:layout_marginBottom="0dp"
+                    />
+                <!-- android:layout_marginBottom="@dimen/jx_oper_item_spacing" -->
+                
+                <!-- 此处有分割线 -->
+                <ImageView 
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/jx_subprogram_divider"
+                    android:layout_margin="0dp"
+                    />
+
+                <com.bestv.ott.jingxuan.view.SelfFocusListView
+                    android:id="@+id/channel_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:cacheColorHint="@android:color/transparent"
+                    android:divider="@drawable/jx_subprogram_divider"
+                    android:listSelector="@drawable/jx_iotv_list_date_selector"
+                    android:scrollbarAlwaysDrawVerticalTrack="false"
+                    android:scrollbars="none" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/playinfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:id="@+id/iv_pause"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="40dp"
+        android:background="@drawable/jx_iotv_img_state_pause"
+        android:visibility="invisible" />
+
+    <TextView
+        style="@style/TVBaseWhiteTextViewLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/jx_channel_index_padding_left"
+        android:layout_marginTop="@dimen/jx_channel_index_padding_left"
+        android:text="@string/jx_fenlei"
+        android:textSize="40sp" />
+
+    <FrameLayout
+        android:id="@+id/frame_main_focus"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </FrameLayout>
+
+</com.bestv.ott.jingxuan.view.JingxuanChannelListView>

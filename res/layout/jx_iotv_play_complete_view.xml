@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bestv.ott.jingxuan.view.PlayCompleteView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/jx_iotv_tv_tran_black_bg" >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/jx_iotv_oper_top_bg"
+            android:scaleType="fitXY" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/jx_iotv_oper_bottom_bg"
+            android:scaleType="fitXY" />
+
+        <ImageView
+            android:id="@+id/img_play_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="@dimen/jx_tv_oper_margin_horizontal"
+            android:layout_marginTop="@dimen/jx_tv_oper_type_margin_top"
+            android:background="@drawable/jx_iotv_prompt_img" />
+
+        <ImageView
+            android:id="@+id/img_channel_list_hit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="@dimen/jx_channel_list_margin_bottom"
+            android:layout_marginLeft="@dimen/jx_channel_list_margin_left"
+            android:background="@drawable/jx_iotv_channel_list_hit" />
+
+        <com.bestv.ott.jingxuan.view.ChannelTitle
+            android:id="@+id/channe_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/jx_tv_oper_margin_horizontal"
+            android:layout_marginTop="@dimen/jx_tv_oper_title_margin_top" >
+        </com.bestv.ott.jingxuan.view.ChannelTitle>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="bottom"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/jx_tv_oper_margin_horizontal" >
+
+            <ImageButton
+                android:id="@+id/btn_channel_list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/jx_tv_oper_item_spacing_large"
+                android:background="@drawable/jx_iotv_tv_channel_list" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/jx_tv_oper_item_spacing_large"
+                android:orientation="vertical" >
+
+               <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/jx_tv_oper_recent_spacing"
+                    android:textSize="24sp"
+                    android:textColor="@android:color/white"
+                    android:text="@string/onliving_str"/>
+
+                <com.bestv.ott.jingxuan.view.ChannelView
+                    android:id="@+id/channel_live"
+                    android:layout_width="@dimen/jx_channel_view_width"
+                    android:layout_height="@dimen/jx_channel_view_height"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true" >
+                </com.bestv.ott.jingxuan.view.ChannelView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                 <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/jx_tv_oper_recent_spacing"
+                    android:textSize="24sp"
+                    android:textColor="@android:color/white"
+                    android:text="@string/recent_str"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <HorizontalScrollView
+                        android:id="@+id/horiz_scroll_recommend"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:scrollbarAlwaysDrawVerticalTrack="false"
+                        android:scrollbars="none" >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" >
+
+                            <GridView
+                                android:id="@+id/grid_recommend"
+                                android:layout_width="wrap_content"
+                                android:layout_height="@dimen/jx_channel_view_height"
+                                android:columnWidth="@dimen/jx_channel_view_width"
+                                android:horizontalSpacing="@dimen/jx_oper_item_spacing"
+                                android:numColumns="auto_fit"
+                                android:listSelector="@android:color/transparent"
+                                android:scrollbarAlwaysDrawVerticalTrack="false"
+                                android:scrollbars="none" >
+                            </GridView>
+                        </LinearLayout>
+                    </HorizontalScrollView>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/jx_channel_view_height" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/jx_channel_view_height" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/frame_focus"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </FrameLayout>
+
+</com.bestv.ott.jingxuan.view.PlayCompleteView>

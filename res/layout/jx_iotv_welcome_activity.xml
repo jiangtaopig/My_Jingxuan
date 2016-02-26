@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageSwitcher
+        android:id="@+id/iotv_switcher_welcome"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </ImageSwitcher>
+
+    <Button
+        android:id="@+id/iotv_btn_welcome"
+        style="@style/JxCommonBlueBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/jx_welcome_btn_margin_bottom"
+        android:background="@drawable/jx_iotv_dialog_gery_selector"
+        android:text="@string/jx_skip"
+        android:textColor="#060606" />
+
+</RelativeLayout>

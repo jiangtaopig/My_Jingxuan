@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!-- <item android:id="@android:id/progress" android:drawable="@drawable/gdyd_progress_horizontal_front" /> -->
+    <item android:id="@android:id/background">
+        <shape>
+            <corners android:radius="0dip" />
+
+            <gradient
+                android:angle="270"
+                android:centerColor="#00000000"
+                android:centerY="1.0"
+                android:endColor="#00000000"
+                android:startColor="#00000000" />
+        </shape>
+    </item>
+
+    <!-- Define the progress properties like start color, end color etc -->
+    <item android:id="@android:id/progress">
+        <clip>
+            <shape>
+                <corners android:radius="0dip" />
+
+                <gradient
+                    android:angle="270"
+                    android:centerColor="#FF06406A"
+                    android:centerY="1.0"
+                    android:endColor="#FF06406A"
+                    android:startColor="#FF06406A" />
+            </shape>
+        </clip>
+    </item>
+
+</layer-list>

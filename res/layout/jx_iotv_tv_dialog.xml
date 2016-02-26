@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/jx_iotv_tv_tran_black_bg" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:background="@drawable/jx_iotv_dialog_bg"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/jx_iotv_dialog_exclamation_mark" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tv_dialog_title"
+                    style="@style/TVDialogTitleWhiteTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/tv_dialog_msg"
+                    style="@style/TVDialogMsgWhiteTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/jx_oper_dialog_spacing"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/tv_dialog_positive"
+                android:layout_width="@dimen/jx_oper_dialog_button_width"
+                android:layout_height="@dimen/jx_oper_dialog_button_height"
+                android:background="@drawable/jx_iotv_dialog_selector"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/jx_tv_text_size_normal" />
+
+            <Button
+                android:id="@+id/tv_dialog_negaitive"
+                android:layout_width="@dimen/jx_oper_dialog_button_width"
+                android:layout_height="@dimen/jx_oper_dialog_button_height"
+                android:background="@drawable/jx_iotv_dialog_selector"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/jx_tv_text_size_normal" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/frame_focus"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </FrameLayout>
+
+</RelativeLayout>

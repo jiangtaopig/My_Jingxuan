@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bestv.ott.jingxuan.view.BackView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/jx_iotv_tv_tran_black_bg" >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/jx_iotv_oper_top_bg"
+            android:scaleType="fitXY" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/jx_iotv_oper_bottom_bg"
+            android:scaleType="fitXY" />
+        
+        <LinearLayout
+            android:id="@+id/jx_loadingtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="60dip"
+            android:layout_marginTop="33dip"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/jx_cur_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:textColor="#B0FF50"
+                android:textSize="36sp" />
+
+            <TextView
+                android:id="@+id/jx_cur_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:textColor="#ffffff"
+                android:textSize="30sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="bottom"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/jx_backview_margin_left"
+            android:paddingBottom="@dimen/jx_backview_margin_bottom"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true" >
+
+            <ImageButton
+                android:id="@+id/btn_back_home"
+                android:layout_width="139dp"
+                android:layout_height="67dp"
+                android:layout_marginRight="@dimen/jx_tv_oper_item_spacing_large"
+                android:background="@drawable/jx_iotv_tv_back_home" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/jx_tv_oper_recent_spacing"
+                    android:textSize="24sp"
+                    android:textColor="@android:color/white"
+                    android:text="@string/jx_recommend"/>
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="67dp"
+                    android:fadingEdge="horizontal"
+                    android:fadingEdgeLength="100dp"
+                    android:scrollbarAlwaysDrawVerticalTrack="false"
+                    android:scrollbars="none" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" >
+
+                        <GridView
+                            android:id="@+id/grid_recommend"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/jx_backview_channel_view_height"
+                            android:clickable="true"
+                            android:descendantFocusability="afterDescendants"
+                            android:focusable="true"
+                            android:focusableInTouchMode="true"
+                            android:listSelector="@drawable/jx_iotv_tran_selector"
+                            android:cacheColorHint="@null"
+                            android:horizontalSpacing="@dimen/jx_oper_item_spacing"
+                            android:numColumns="auto_fit"
+                            android:scrollbarAlwaysDrawVerticalTrack="false"
+                            android:scrollbars="none" >
+                        </GridView>
+                    </LinearLayout>
+                </HorizontalScrollView>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/frame_focus"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </FrameLayout>
+
+</com.bestv.ott.jingxuan.view.BackView>

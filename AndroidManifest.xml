@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.bestv.jingxuan"
+    android:versionCode="2568"
+    android:versionName="BesTV_Jingxuan_A_1.3.0.10" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CLEAR_APP_CACHE" />
+    <uses-permission android:name="com.CTC_ChinaNet.android.tm.SERVICES" />
+    <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.MOUT_UMONT_FILESYSTEM" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="15" />
+
+    <application
+        android:name="com.bestv.ott.jingxuan.JingxuanApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/jx_jingxuan_ic_launcher"
+        android:label="@string/jx_app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.bestv.ott.jingxuan.JX_Activity"
+            android:configChanges="orientation|keyboardHidden"
+            android:icon="@drawable/jx_jingxuan_ic_launcher"
+            android:label="@string/jx_app_name"
+            android:launchMode="singleInstance"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="bestv.ott.action.jingxuan" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name="com.bestv.ott.jingxuan.iotvlogservice.logmanager.IOTV_LogUploadService"
+            android:exported="false" />
+
+        <activity
+            android:name="com.bestv.ott.jingxuan.WelcomeActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleInstance"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" >
+        </activity>
+
+        <receiver android:name="com.bestv.ott.jingxuan.livetv.JingxuanReceiver" >
+            <intent-filter>
+                <action android:name="bestv.ott.action.logined" />
+                <!-- <action android:name="karelgt.action.test" /> -->
+            </intent-filter>
+        </receiver>
+
+        <service android:name="com.bestv.ott.jingxuan.livetv.JingxuanCacheService" >
+        </service>
+        
+        <service android:name="com.bestv.ott.jingxuan.livetv.IotvCacheService" >
+        </service>
+        
+    </application>
+
+</manifest>

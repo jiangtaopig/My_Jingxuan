@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/jingxuan_channel_program_width"
+    android:layout_height="@dimen/jx_channel_program_height"
+    android:background="@android:color/transparent" >
+
+    <com.bestv.ott.jingxuan.view.JingxuanProgramProgressView
+        android:id="@+id/progress_item_progress"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible" >
+    </com.bestv.ott.jingxuan.view.JingxuanProgramProgressView>
+
+    <!-- <ImageView -->
+    <!-- android:id="@+id/program_status" -->
+    <!-- android:layout_width="wrap_content" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:layout_centerVertical="true" -->
+    <!-- android:layout_marginLeft="@dimen/channel_program_margin_left" -->
+    <!-- android:layout_marginRight="@dimen/tv_oper_item_spacing" -->
+    <!-- android:minHeight="@dimen/channel_program_status_min_heigh" -->
+    <!-- android:minWidth="@dimen/channel_program_status_min_width" /> -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/jx_channel_program_margin_left"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/program_channel_icon"
+            android:layout_width="55dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="@dimen/jx_oper_item_spacing"
+            android:scaleType="fitCenter" />
+
+        <!-- add by xubin 2015.11.24 begin -->
+        <RelativeLayout 
+            android:layout_width="wrap_content"
+        	android:layout_height="match_parent"
+        	android:layout_gravity="center_vertical"
+        	android:gravity="center_vertical">
+            
+            <TextView
+	            android:id="@+id/program_name"
+	            style="@style/TVBaseWhiteTextView"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginRight="@dimen/jx_channel_program_margin_right"
+	            android:layout_weight="1"
+	            android:duplicateParentState="true"
+	            android:ellipsize="marquee"
+	            android:gravity="left"
+	            android:marqueeRepeatLimit="marquee_forever"
+	            android:singleLine="true" />
+            
+            <TextView
+	            android:id="@+id/next_program_name"
+	            android:layout_below="@+id/program_name"
+	            style="@style/TVBaseWhiteTextView"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginRight="@dimen/jx_channel_program_margin_right"
+	            android:layout_weight="1"
+	            android:duplicateParentState="true"
+	            android:ellipsize="marquee"
+	            android:gravity="left"
+	            android:marqueeRepeatLimit="marquee_forever"
+	            android:singleLine="true" 
+	            android:visibility="gone"/>
+            
+        </RelativeLayout>
+        <!-- add by xubin 2015.11.24 end -->
+
+        <ImageView
+            android:id="@+id/program_subscribe_invalid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/jx_channel_program_margin_right"
+            android:src="@drawable/jx_subscribe_invalid"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/program_subscribe_update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/jx_subscribe_update"
+        android:visibility="gone" />
+
+</RelativeLayout>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="iotv_app_name">电视回看</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="zero_time">00:00:00</string>
+    <string name="null_time">//://://</string>
+    <string name="network_error">网络异常，请检查网络</string>
+    <string name="network_error_by_ethernet">有线网络已断开, 正在尝试连接无线网络</string>
+    <string name="schedule_today">今日节目</string>
+    <string name="key_clear">缓存已清除，手动重启后生效。</string>
+    <string name="key_appinfo">当前应用信息：\r\n版本编码：%1$S\r\n版本号：%2$S</string>
+    <string name="key_test">已设置为测试时长</string>
+    <string name="key_rest_tip">亲，休息10分钟后将会自动播放哦\r\n（长时间休息可以手动暂停播放）</string>
+    <string name="title_activity_prompt">PromptActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="prompt_continue">继续观看</string>
+    <string name="prompt_rest">休息一下</string>
+    <string name="prompt_rest_tip">您已长时间观看电视，是否要休息一下？</string>
+    <string name="prompt_qos_open">日志上报功能已经打开</string>
+    <string name="prompt_qos_close">日志上报功能已经关闭</string>
+    <string name="prompt_play_soon">即将为您播放</string>
+    <string name="prompt_no_record">暂无观看记录</string>
+    <string name="prompt_subscribe_too_much">订阅的节目数量过多，无法订阅</string>
+    <string name="channel_list_no_program">节目单加载中</string>
+    <string name="channel_list_no_subscribe_program">无订阅节目</string>
+    <string name="recent_str">最近观看</string>
+    <string name="next_prog_str">下一回看</string>
+    <string name="onliving_str">正在直播</string>
+    <string name="loadingSchedule_str">正在初始化频道列表，请稍后</string>
+    <string name="play_detail_info">码率: %1$dkbps    下载速率: %2$dKB/s</string>
+    <string name="show_download_detail">下载详情显示开关已经打开</string>
+    <string name="data_load_retry">重新加载</string>
+    <string name="take_channellist_failed">频道列表加载失败，请检查网络是否通畅</string>
+    <string name="error_Code">错误代码</string>
+    <string name="app_exit">退出</string>
+    <string name="rest_prompt_test">已将休息提醒改为测试模式，休息间隔为60秒，10秒未操作退出</string>
+    <string name="play_authen_failed">获取播放地址失败, 错误码: </string>
+    <string name="lianliankan_play_failed">该频道暂时无法播放</string>
+    <string name="auto_playnext_live_by_noschedule">获取频道下一节目单失败，将自动为您切换到当前直播</string>
+    <string name="auto_playprev_live_by_noschedule">获取频道上一节目单失败，将自动为您切换到当前直播</string>
+    <string name="date_excess_prompt">获取频道节目单失败，已经超过最大回看日期</string>
+    <string name="unsupport_timeshift">无法获取频道的当前节目信息，暂时不支持快进快退</string>
+    <string name="timeshift_open_prompt">直播时移功能已打开</string>
+    <string name="timeshift_close_prompt">直播时移功能已关闭</string>
+    <string name="tv_date_today">今天</string>
+    <string name="tv_date_yeaterday">昨天</string>
+    <string name="tv_date_before">上</string>
+    <string name="tv_date_sunday">周日</string>
+    <string name="tv_date_monday">周一</string>
+    <string name="tv_date_tuesday">周二</string>
+    <string name="tv_date_wednesday">周三</string>
+    <string name="tv_date_thursday">周四</string>
+    <string name="tv_date_friday">周五</string>
+    <string name="tv_date_saturday">周六</string>
+    <string name="tv_today">今天</string>
+    <string name="tv_today_short">今</string>
+    <string name="tv_yeaterday_short">昨</string>
+    <string name="jx_skip">跳过</string>
+    <string name="jx_try_now">立即体验</string>
+
+    <!-- the strings of jingxuan -->
+    <string name="jx_app_name">电视精选</string>
+    <string name="jx_exit_toast_text">再按一次返回键退出</string>
+    <string name="jx_channellist_failed">精选频道列表加载失败</string>
+    <string name="jx_schedule_failed">精选频道节目单加载失败</string>
+    <string name="jx_category_failed">精选栏目加载失败</string>
+    <string name="jx_next_program">正跳转至下一个节目</string>
+    <string name="play_errorcode_prompt">错误代码: %1$s</string>
+    <string name="play_error_msg">播放出错</string>
+    <string name="jx_recommend">推荐</string>
+    <string name="jx_prompt_no_recommend">暂无推荐</string>
+    <string name="jx_next_schedule">下一节目：</string>
+    <string name="jx_fenlei">分类</string>
+    <string name="jx_future_schedule">即将播放下一节目：</string>
+    <string name="jx_subcribed_schedule1">已订阅：</string>
+    <string name="jx_subcribed_schedule2">，可在订阅分类中查看</string>
+    
+    <string-array name="error_msgs">
+        <item>050000获取播放地址时连接服务器失败</item>
+        <item>050001播放地址不合法</item>
+        <item>050002播放地址为空</item>
+        <item>050003获取详情页失败</item>
+        <item>050004播放协议不支持</item>
+        <item>050005鉴权失败</item>
+        <item>050200M3u文件下载失败</item>
+        <item>050201M3u文件下载超时</item>
+        <item>050203M3u文件下载失败</item>
+        <item>050202M3u文件解析失败</item>
+        <item>050100下载视频文件连接失败</item>
+        <item>050101下载视频文件连接超时</item>
+        <item>050000获取播放地址时连接服务器失败</item>
+        <item>050104下载视频文件下载失败</item>
+        <item>050102视频格式不支持</item>
+        <item>050103编码格式不支持</item>
+        <item>059999未知错误</item>
+        <item>060000暂时获取不到节目信息</item>
+    </string-array>
+    
+    <!--  -->
+    <string-array name="channelindex_hight">
+        <item>订阅</item>
+        <item>最新</item>
+        <item>最热</item>
+    </string-array>
+    <!-- add by xubin 2015.11.09 begin -->
+    <string name="channel_not_begin">该频道还未开始,请选择其它频道！</string>
+    <string name="current_schedule">当前：</string>
+    <string name="sub_schedule">后续：</string>
+    <!-- add by xubin 2015.11.09 end -->
+    <string name="err_2055">该节目无法播放</string>
+
+</resources>

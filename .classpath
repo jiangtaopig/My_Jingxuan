@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="com.android.ide.eclipse.adt.ANDROID_FRAMEWORK"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.LIBRARIES"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.DEPENDENCIES"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="gen"/>
+	<classpathentry exported="true" kind="lib" path="D:/BesTV_SVN_ALL/branch/src_independ_dev/jars/BesTVMediaPlayer.jar"/>
+	<classpathentry exported="true" kind="lib" path="D:/BesTV_SVN_ALL/branch/src_independ_dev/jars/BesTVSDK.jar"/>
+	<classpathentry exported="true" kind="lib" path="D:/BesTV_SVN_ALL/branch/src_independ_dev/jars/BSPSystem.jar"/>
+	<classpathentry kind="lib" path="D:/BesTV_SVN_ALL/branch/src_independ_dev/jars/framework.jar"/>
+	<classpathentry exported="true" kind="lib" path="D:/BesTV_SVN_ALL/branch/src_independ_dev/jars/FunCrash.jar"/>
+	<classpathentry exported="true" kind="lib" path="D:/BesTV_SVN_ALL/branch/src_independ_dev/jars/gson.jar"/>
+	<classpathentry exported="true" kind="lib" path="D:/BesTV_SVN_ALL/src_independ/jars/BesTVQosProxy.jar"/>
+	<classpathentry exported="true" kind="lib" path="D:/BesTV_SVN_ALL/src_independ/jars/shcmsystem.jar"/>
+	<classpathentry kind="output" path="bin/classes"/>
+</classpath>

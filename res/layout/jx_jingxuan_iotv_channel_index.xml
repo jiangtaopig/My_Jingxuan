@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/jingxuan_channel_index_width"
+    android:layout_height="@dimen/jx_channel_index_height"
+    android:background="@android:color/transparent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/channel_name"
+        style="@style/Jingxuan_TVBaseWhiteTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/jx_oper_item_spacing"
+        android:duplicateParentState="true"
+        android:ellipsize="marquee"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:textColor="@android:color/white"
+        android:singleLine="true" />
+
+    <ImageView
+        android:id="@+id/program_subscribe_update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/jx_subscribe_update"
+        android:visibility="gone" />
+
+</RelativeLayout>

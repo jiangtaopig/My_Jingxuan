@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="jx_padding_small">8dp</dimen>
+    <dimen name="jx_padding_medium">8dp</dimen>
+    <dimen name="jx_padding_large">16dp</dimen>
+    <dimen name="jx_activity_horizontal_margin">16dp</dimen>
+    <dimen name="jx_activity_vertical_margin">16dp</dimen>
+    
+    <!-- 字体大小 -->
+    <dimen name="jingxuan_tv_text_size_normal">28sp</dimen>
+    <dimen name="jingxuan_fake_loading_text_size">22sp</dimen>
+    <dimen name="jx_tv_text_size_normal">24sp</dimen>
+    <dimen name="jx_tv_text_size_small">16sp</dimen>
+    <dimen name="jx_tv_text_size_large">26sp</dimen>
+    <dimen name="jx_tv_text_size_date_name">28sp</dimen>
+    <dimen name="jx_tv_text_size_dialog_msg">20sp</dimen>
+    
+    <!-- 返回、暂停的频道控件 -->
+    <dimen name="jx_channel_view_width">284dp</dimen>
+    <dimen name="jx_channel_view_height">140dp</dimen>
+    <dimen name="jx_channel_view_icon_height">72dp</dimen>
+    <dimen name="jx_channel_view_text_padding_left">10dp</dimen>
+    
+    <!-- 当前频道台标信息 -->
+    <dimen name="jx_channel_title_width">386dp</dimen>
+    <dimen name="jx_channel_title_info_width">285dp</dimen>
+    <dimen name="jx_channel_title_progress_height">29dp</dimen>
+    <dimen name="jx_channel_title_nums_margin_right">30dp</dimen>
+    <dimen name="jx_channel_title_icon_width">48dp</dimen>
+    <dimen name="jx_channel_title_icon_height">33dp</dimen>
+    
+    <!-- 按星号键的提示 -->
+    <dimen name="jx_channel_list_margin_left">50dp</dimen>
+    <dimen name="jx_channel_list_margin_bottom">20dp</dimen>
+    
+    <!-- 暂停、返回页面的操作栏 -->
+    <dimen name="jx_tv_oper_recent_spacing">1dp</dimen>
+    <dimen name="jx_oper_item_spacing">4dp</dimen>
+    <dimen name="jx_tv_oper_item_spacing_large">28dp</dimen>
+    <dimen name="jx_tv_oper_margin_horizontal">50dp</dimen>
+    <dimen name="jx_tv_oper_type_margin_top">50dp</dimen>
+    <dimen name="jx_tv_oper_title_margin_top">45dp</dimen>
+    <dimen name="jx_tv_oper_safe_height">150dp</dimen>
+    
+    <!-- 节目单列表左边频道 -->
+    <!-- <dimen name="jx_channel_index_width">140dp</dimen> -->
+    <dimen name="jx_padding_top">70dp</dimen>
+    <dimen name="jx_channel_index_width">84dp</dimen>
+    <dimen name="jx_channel_index_height">72dp</dimen>
+    <dimen name="jx_channel_index_padding_left">13dp</dimen>
+    <dimen name="jx_channel_index_btn_width">50dp</dimen>
+    <dimen name="jx_channel_index_num_margin_top">11dp</dimen>
+    <dimen name="jx_channel_index_num_margin_right">5dp</dimen>
+    <dimen name="jingxuan_channel_index_width">84dp</dimen>
+    <!-- 节目列表右边内容 -->
+    <!-- <dimen name="channel_program_width">284dp</dimen> -->
+    <dimen name="jx_channel_program_width">284dp</dimen>
+    <dimen name="jx_channel_program_height">72dp</dimen>
+    <dimen name="jx_channel_program_margin_left">12dp</dimen>
+    <dimen name="jx_channel_program_margin_right">12dp</dimen>
+    <dimen name="jx_channel_program_status_min_width">18dp</dimen>
+    <dimen name="jx_channel_program_status_min_heigh">17dp</dimen>
+    <dimen name="jx_channel_program_info_width">180dp</dimen>
+    <dimen name="jingxuan_channel_program_info_width">270dp</dimen>
+    <dimen name="jingxuan_channel_program_width">284dp</dimen>
+    
+    <!-- 节目单界面 -->
+    <dimen name="jx_channel_list_padding_left">20dp</dimen>
+    <dimen name="jx_channel_list_title_margin_top">30dp</dimen>
+    <dimen name="jx_channel_list_list_margin_top">8dp</dimen>
+    <dimen name="jx_channel_list_list_margin_left">66dp</dimen>
+    <dimen name="jx_channel_list_name_margin_top">60dp</dimen>
+    <dimen name="jx_channel_list_date_margin_top">30dp</dimen>
+    <dimen name="jx_channel_list_date_item_height">72dp</dimen>
+    <!-- <dimen name="channel_list_date_str_margin_left">5dp</dimen> -->
+    <dimen name="jx_channel_list_date_str_margin_left">20dp</dimen>
+    <!-- <dimen name="channel_list_date_num_margin_right">5dp</dimen> -->
+    <dimen name="jx_channel_list_date_num_margin_right">10dp</dimen>
+    <dimen name="jx_channel_list_help_margin_top">108dp</dimen>
+    <dimen name="jx_channel_date_width">174dp</dimen>
+    <dimen name="jx_channel_date_height">604dp</dimen>
+    <!-- Focus框相关 -->
+    <dimen name="jx_tv_focus_offset">17dp</dimen>
+    
+    <!-- Dialog相关 -->
+    <dimen name="jx_oper_dialog_spacing">28dp</dimen>
+    <dimen name="jx_oper_dialog_button_width">175dp</dimen>
+    <dimen name="jx_oper_dialog_button_height">103dp</dimen>
+    
+    <dimen name="jx_progress_bar_height">50dp</dimen>
+    <dimen name="jx_fake_loading_txt_margin_top">10dp</dimen>
+    
+    <dimen name="jx_welcome_btn_margin_bottom">72dp</dimen>
+    <dimen name="jx_backview_margin_left">162dp</dimen>
+    <dimen name="jx_backview_margin_bottom">98dp</dimen>
+    <dimen name="jx_backview_channel_view_width">284dp</dimen>
+    <dimen name="jx_backview_channel_view_height">67dp</dimen>
+</resources>

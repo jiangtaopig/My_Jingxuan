@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/jx_channel_program_width"
+    android:layout_height="@dimen/jx_channel_program_height"
+    android:background="@android:color/transparent" >
+
+    <com.bestv.ott.jingxuan.view.ProgramProgressView
+        android:id="@+id/progress_item_progress"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </com.bestv.ott.jingxuan.view.ProgramProgressView>
+
+    <ImageView
+        android:id="@+id/program_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/jx_channel_program_margin_left"
+        android:layout_marginRight="@dimen/jx_oper_item_spacing"
+        android:minHeight="@dimen/jx_channel_program_status_min_heigh"
+        android:minWidth="@dimen/jx_channel_program_status_min_width" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="40dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/program_time"
+            style="@style/TVBaseWhiteTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:paddingRight="@dimen/jx_oper_item_spacing" />
+
+        <TextView
+            android:id="@+id/program_name"
+            style="@style/TVBaseWhiteTextView"
+            android:layout_width="@dimen/jx_channel_program_info_width"
+            android:layout_height="wrap_content"
+            android:duplicateParentState="true"
+            android:ellipsize="marquee"
+            android:gravity="left"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:singleLine="true" />
+
+        <ImageView
+            android:id="@+id/program_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/jx_iotv_status_live"
+            android:minHeight="@dimen/jx_channel_program_status_min_heigh"
+            android:minWidth="@dimen/jx_channel_program_status_min_width"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+</RelativeLayout>

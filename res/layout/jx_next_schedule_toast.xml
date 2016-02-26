@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/jx_next_schedule_border">
+    
+	<TextView 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="LineOne"
+	    android:textSize="22sp"
+	    android:layout_gravity="center_vertical"
+	    android:lineSpacingMultiplier="1.2"
+	    android:textColor="#48ff00"
+	    android:id="@+id/LineOne" />
+	        
+
+	 <!-- 固定width="280px"  为了滚动显示 -->
+	<TextView 
+	    android:layout_width="280dp"  
+	    android:layout_height="fill_parent"
+	    android:text="LineTwo"
+	    android:textSize="24sp"
+	    android:layout_gravity="center_vertical"
+	    android:ellipsize="marquee" 
+	    android:singleLine="true"
+	    android:marqueeRepeatLimit="marquee_forever" 
+	    android:focusable="true"
+	    android:textColor="@android:color/white"
+	    android:id="@+id/LineTwo" />
+	    
+</LinearLayout>

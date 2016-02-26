@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/jx_channel_list_date_item_height" >
+
+    <TextView
+        android:id="@+id/channel_date_str"
+        style="@style/TVBaseWhiteTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/jx_channel_list_date_item_height"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/jx_channel_list_date_str_margin_left"
+        android:gravity="center_vertical"
+        android:singleLine="true" />
+
+    <TextView
+        android:id="@+id/channel_date_num"
+        style="@style/TVBaseWhiteTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/jx_channel_list_date_item_height"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/jx_channel_list_date_num_margin_right"
+        android:gravity="center_vertical"
+        android:singleLine="true" />
+
+</RelativeLayout>

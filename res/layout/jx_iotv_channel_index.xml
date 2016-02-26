@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/jx_channel_index_width"
+    android:layout_height="@dimen/jx_channel_index_height"
+    android:background="@android:color/transparent"
+    android:orientation="vertical"
+    android:gravity="center_vertical"
+    android:paddingLeft="@dimen/jx_channel_index_padding_left" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/channel_day"
+            style="@style/TVBaseWhiteTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/channel_nums"
+            android:gravity="left"
+            android:visibility="invisible" />
+
+        <LinearLayout
+            android:id="@+id/channel_nums"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="@dimen/jx_channel_index_num_margin_top"
+            android:layout_marginRight="@dimen/jx_channel_index_num_margin_right"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/channel_num_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/channel_num_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/channel_name"
+        style="@style/TVBaseWhiteTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/jx_oper_item_spacing"
+        android:singleLine="true"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:ellipsize="marquee"
+        android:gravity="left"
+        android:duplicateParentState="true" />
+
+</LinearLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    
+    <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/jx_iotv_tv_tran_black_bg"
+            android:scaleType="fitXY" />
+    
+    <TextView 
+       android:id="@+id/schedule_start_time"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_centerVertical="true"
+       android:layout_alignParentLeft="true"
+       android:layout_marginLeft="8dp"
+       android:textColor="#FFFFFFFF"
+       android:textSize="18sp"/>
+        
+    <TextView 
+       android:id="@+id/schedule_name"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_toRightOf="@id/schedule_start_time"
+       android:layout_centerVertical="true"
+       android:layout_marginLeft="4dp"
+       android:textColor="#FFFFFFFF"
+       android:textSize="18sp"/>
+       
+</RelativeLayout>

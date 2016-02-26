@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fillAfter="true"
+    android:repeatCount="3"
+    android:shareInterpolator="false" >
+
+    <alpha
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:startOffset="2000"
+        android:duration="1000"
+        android:fromAlpha="0.0"
+        android:interpolator="@android:anim/accelerate_decelerate_interpolator"
+        android:toAlpha="1.0"
+        android:repeatCount="3"
+        android:repeatMode="reverse" />
+
+</set>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="selected_color">#FFFFFF</color>
+    <color name="back_color">#ff3d474b</color>
+    <color name="msg_color">#0082eb</color>
+    <color name="item_default">#39a6ff</color>
+    <color name="jx_fake_loading_txt_color">#FF666666</color>
+
+    <drawable name="record_select">#c0c0c0</drawable>
+    <drawable name="translucent_background">#400000ee</drawable>
+
+    <color name="bright_foreground_dark">#00FFFF</color>
+    
+    <color name="tv_dialog_blue">#A00072C6</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    
+    <color name="channel_index">#00ff2f</color>
+
+</resources>
